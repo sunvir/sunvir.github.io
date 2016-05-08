@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <title>Artists Studio Locations</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Anu Gujral's Artists Studio" />
+    <meta name="keywords" content="anu gujral artists studio art classes montessori kids children" />
+    <style type="text/css">
+        html, body { height: 100%; margin: 0; padding: 0;  }
+      #map { height: 50%; }
+      </style>
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script> 
+      <script>
+      var map;
+      function initMap() {
+        var cvrc = {lat:32.94819,lng:-117.2340646};
+        var oarc = {lat:32.9275884,lng:-117.2192153};
+        var srrc = {lat:32.9275884, lng:-117.0819636};
+        var lifetime = {lat:32.9920395,lng:-117.1660977};
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: cvrc,
+          zoom: 12
+        });
+
+       var cvmarker = new google.maps.Marker({
+          map: map,
+          position: cvrc,
+          title: 'Carmel Valley Rec Center'
+        });
+
+      var oamarker = new google.maps.Marker({
+          map: map,
+          position: oarc,
+          title: 'Ocean Air Rec Center'
+        });
+
+       var srmarker = new google.maps.Marker({
+          map: map,
+          position: srrc,
+          title: 'Scripps Ranch Rec Center'
+        });
+
+ var srmarker = new google.maps.Marker({
+          map: map,
+          position: lifetime,
+          title: 'lifetime montessori'
+        });
+      }
+    </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa1Pwk5V7vm6YeY2GU1t0xG8YrKdkUsYA&callback=initMap"
+    async defer></script>
+
+    <noscript>
+      <link rel="stylesheet" href="css/skel.css" />
+      <link rel="stylesheet" href="css/style.css" />
+    </noscript> 
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    
+    
+</head>
+<body class="homepage">
+  <div class="wrapper style1"> 
+<h2>Artists Studio Locations</h2>
+</div>
+	<div id="map"></div>
+<a href="index.html">Home</a>
+  
+</body>
+</html>
