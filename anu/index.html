@@ -16,6 +16,9 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -25,7 +28,7 @@
 		
 	</head>
 	<body class="homepage">
-
+		
 		<!-- Header Wrapper -->
 			<div class="wrapper style1">
 			
@@ -106,7 +109,10 @@
 				<section class="container">
 					<header class="major">
 						<h2>Kids' Art Gallery</h2>
-						<img src="" name="Rotating" id="Rotating1" width=400>
+						<span>
+							<img src="" name="Rotating" id="Rotating1" height=700>
+						</span>
+						
 					</header>
 				  
   
@@ -117,34 +123,30 @@
 			<div  id="classes" class="wrapper style3">
 				<section class="container">
 					<header class="major">
-						<h2>Our Classes</h2>
-						<span class="byline">
-							In these fun and creative themed art classes, 
-							children will ignite their imagination and create masterpieces that are truly unique.
-							Kids are taught in the following age groups: Ages 3-5, Ages 5-8, Ages 8-12
-						</span>
+						<h2>Group Classes</h2>
+						
 					</header>
-					
-					<div class="wrapper style3">
-							<ul class="wrapper style3">
+					<span >
+							<p>Classes are held at various community rec centers and schools throughout San Diego.  Please check the list list below for current offerings.
+							<p>In these fun and creative themed art classes children will ignite their imagination and create masterpieces that are truly unique.
+							<p>Kids are taught in the following age groups: Ages 3-5, Ages 5-8, Ages 8-12
+						</span>
+							<ul>	
+								Group Class Locations
+
 								<li>
-									<span class="fa fa-cogs"></span>
-									<p>Carmel Valley Recreation Center</p>
+									Carmel Valley Recreation Center
 								</li>
 								<li>
-									<span class="fa fa-cogs"></span>
-									<p>Ocean Air Recreation Center</p>
+									Ocean Air Recreation Center
 								</li>
 								<li>
-									<span class="fa fa-cogs"></span>
-									<p>Scripps Ranch Recreation Center</p>
+									Scripps Ranch Recreation Center
 								</li>
 								<li>
-									<span class="fa fa-cogs"></span>
-									<p>Lifetime Montessori</p>
+									Lifetime Montessori
 								</li>
 							</ul>
-						</div>
 					
 				</section>
 			</div>
@@ -167,7 +169,7 @@
 					<header class="major">
 						<h2>Camps</h2>
 						<span class="byline">
-							Art sessions and camps are fun, creative themed lessons. Kids create masterpieces using real artists materials including oil, acrylic, watercolor paints, etc.
+							Art sessions and camps are fun and creative themed lessons. Kids create masterpieces using real artists' materials including oil, acrylic, watercolor paints, and more.
 						</span>
 					</header>
 					
@@ -215,6 +217,7 @@
 					<h2>Connect with us</h2>
 					<span class="byline">@@@</span>
 				</header>
+				<div class="g-hangout" data-render="createhangout"></div>
 				<ul class="icons">
 					<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
 					<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
@@ -230,30 +233,33 @@
 				</div>			
 		</div>
 
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+    <g:hangout render="createhangout"
+        invites="[{ id : '2025551212', invite_type : 'PHONE' }]">
+    </g:hangout>
 
-<script language="JavaScript">
-  var ImageArr1 = new Array("images/Photos/IMAG1162-1-1.jpg","images/Photos/IMAG1165-1.jpg",
-  "images/Photos/IMAG1259-1-1.jpg", "images/Photos/IMAG1261-1.jpg");
-  var ImageHolder1 = document.getElementById('Rotating1');
-  
-  var ImageArr2 = new Array("Picture(5).jpg","Picture(6).jpg","Picture(7).jpg");
-  var ImageHolder2 = document.getElementById('Rotating2');
-  
-  function RotateImages(whichHolder,Start)
-  {
-  	var a = eval("ImageArr"+whichHolder);
-  	var b = eval("ImageHolder"+whichHolder);
-  	if(Start>=a.length)
-  		Start=0;
-  	b.src = a[Start];
-  	window.setTimeout("RotateImages("+whichHolder+","+(Start+1)+")",3500);
-  }
-  
-  RotateImages(1,0);
-  RotateImages(2,0);
-  
-  </script>
-
+		<script language="JavaScript">
+		  var ImageArr1 = new Array("images/Photos/IMAG1162-1-1.jpg","images/Photos/IMAG1165-1.jpg",
+		  "images/Photos/IMAG1259-1-1.jpg", "images/Photos/IMAG1261-1.jpg");
+		  var ImageHolder1 = document.getElementById('Rotating1');
+		  
+		  var ImageArr2 = new Array("Picture(5).jpg","Picture(6).jpg","Picture(7).jpg");
+		  var ImageHolder2 = document.getElementById('Rotating2');
+		  
+		  function RotateImages(whichHolder,Start)
+		  {
+		  	var a = eval("ImageArr"+whichHolder);
+		  	var b = eval("ImageHolder"+whichHolder);
+		  	if(Start>=a.length)
+		  		Start=0;
+		  	b.src = a[Start];
+		  	window.setTimeout("RotateImages("+whichHolder+","+(Start+1)+")",3500);
+		  }
+		  
+		  RotateImages(1,0);
+		  RotateImages(2,0);
+		  
+		  </script>
 
 	</body>
 </html>

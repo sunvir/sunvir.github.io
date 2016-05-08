@@ -1,1 +1,12 @@
-Hello World
+<html>
+<head>
+    <title>Hangout button demo: Inviting a phone number</title>
+    <link rel="canonical" href="http://www.example.com" />
+</head>
+<body>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <g:hangout render="createhangout"
+        invites="[{ id : '2025551212', invite_type : 'PHONE' }]">
+    </g:hangout>
+</body>
+</html>
