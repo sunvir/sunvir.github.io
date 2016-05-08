@@ -218,6 +218,15 @@
 					<span class="byline">@@@</span>
 				</header>
 				<div class="g-hangout" data-render="createhangout"></div>
+ <g:hangout render="createhangout"
+        invites="[{ id : '1234', invite_type : 'PROFILE' },
+                  { id : 'gujralanu@gmail.com', invite_type : 'EMAIL' }]">
+    </g:hangout>
+
+
+			    <g:hangout render="createhangout"
+			        invites="[{ id : '+18583868923', invite_type : 'PHONE' }]">
+			    </g:hangout>
 				<ul class="icons">
 					<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
 					<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
@@ -233,10 +242,7 @@
 				</div>			
 		</div>
 
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-    <g:hangout render="createhangout"
-        invites="[{ id : '2025551212', invite_type : 'PHONE' }]">
-    </g:hangout>
+
 
 		<script language="JavaScript">
 		  var ImageArr1 = new Array("images/Photos/IMAG1162-1-1.jpg","images/Photos/IMAG1165-1.jpg",
