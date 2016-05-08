@@ -17,8 +17,7 @@
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
-   		 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa1Pwk5V7vm6YeY2GU1t0xG8YrKdkUsYA&callback=initMap"
-		async defer></script>
+   		 
 
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
@@ -138,15 +137,7 @@
 								<li>
 									Carmel Valley Recreation Center
 									<div id="map1"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map1'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
+ 
     
 								</li>
 								<li>
@@ -229,12 +220,6 @@
 					<h2>Connect with us</h2>
 					<span class="byline">@@@</span>
 				</header>
-				<div class="g-hangout" data-render="createhangout"></div>
- <g:hangout render="createhangout"
-        invites="[{ id : '1234', invite_type : 'PROFILE' },
-                  { id : 'gujralanu@gmail.com', invite_type : 'EMAIL' }]">
-    </g:hangout>
-
 
 			    <g:hangout render="createhangout"
 			        invites="[{ id : '+18583868923', invite_type : 'PHONE' }]">
@@ -278,6 +263,18 @@
 		  RotateImages(2,0);
 		  
 		  </script>
+
+   <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map1'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+		  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa1Pwk5V7vm6YeY2GU1t0xG8YrKdkUsYA&callback=initMap"
+		async defer></script>
 
 	</body>
 </html>
