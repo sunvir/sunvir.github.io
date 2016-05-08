@@ -1,34 +1,42 @@
 <!DOCTYPE HTML>
-<!--
-	Solarize by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 	<head>
 		<title>Artists Studio</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Anu Gujral's Artists Studio" />
 		<meta name="keywords" content="anu gujral artists studio art classes montessori kids children" />
+ 		
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.dropotron.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		<script src="https://apis.google.com/js/platform.js" async defer></script>
-   		 
+		<script src="https://apis.google.com/js/platform.js" async defer></script> 
+   		<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+		  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa1Pwk5V7vm6YeY2GU1t0xG8YrKdkUsYA&callback=initMap"
+		async defer></script>
 
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
-		</noscript>
+		</noscript> 
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		
 		
 	</head>
 	<body class="homepage">
-		
+			
+
 		<!-- Header Wrapper -->
 			<div class="wrapper style1">
 			
@@ -46,7 +54,6 @@
 									<li>
 										<a href="">Quick Links</a>
 										<ul>
-
 											<li>
 												<a href="">Classes</a>
 												<ul>
@@ -86,12 +93,12 @@
 		<!-- Section One -->
 			<div class="wrapper style3">
 				<section class="container">
-				
+				<div id="map"></div>
 							<header class="major">
 								<h2>Educational Art Classes for Kids</h2>
 								<span class="byline">
 									Children are by nature creative and my job is simply to encourage the natural interest and curiosities that kids display. 
-								In my fun and creative themed art classes and art camps, children will ignite their imagination, develop skills , build confidence, develope concentration and have fun.</span>
+								In my fun and creative themed art classes and art camps, children will ignite their imagination, develop skills, build confidence, develop concentration and have fun.</span>
 							</header>
 
 							<a href="#classes" class="button alt">Classes</a>
@@ -131,25 +138,24 @@
 							<p>In these fun and creative themed art classes children will ignite their imagination and create masterpieces that are truly unique.
 							<p>Kids are taught in the following age groups: Ages 3-5, Ages 5-8, Ages 8-12
 						</span>
-							<ul>	
-								Group Class Locations
-
-								<li>
-									Carmel Valley Recreation Center
- 
-    
-								</li>
-								<li>
-									Ocean Air Recreation Center
-								</li>
-								<li>
-									Scripps Ranch Recreation Center
-								</li>
-								<li>
-									Lifetime Montessori
-								</li>
-							</ul>
+							
+						<a class="button alt" target="new" href="https://www.google.com/maps/place/Carmel+Valley+Recreation+Center/@32.94819,-117.2340646,15z/data=!4m5!3m4!1s0x0:0xf7b9d88fd7634ef2!8m2!3d32.94819!4d-117.2340646">
+							Carmel Valley Recreation Center</a>
+						<a class="button alt" target="new" href="https://www.google.com/maps/place/Ocean+Air+Recreation+Center/@32.927951,-117.2192153,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc07b443394be7:0x646608f59b5f9e7f!8m2!3d32.927951!4d-117.2170266">
+							Ocean Air Recreation Center</a>
+						<a class="button alt" target="new" href="https://www.google.com/maps/place/Scripps+Ranch+Recreation+Center/@32.9275884,-117.0819636,17z/data=!3m1!4b1!4m5!3m4!1s0x80dbfbdf57092631:0xdb2c9bf8fd0ae554!8m2!3d32.9275884!4d-117.0797749">
+							Scripps Ranch Recreation Center</a>
+						<a class="button alt" target="new" href="https://www.google.com/maps/place/Lifetime+Montessori+School/@32.9920395,-117.1660977,17z/data=!3m1!4b1!4m5!3m4!1s0x80dbf7db6d53453f:0xf025266ae780f4ed!8m2!3d32.9920395!4d-117.163909">
+							Lifetime Montessori</a>
 					
+						<img src="https://maps.googleapis.com/maps/api/staticmap?center=32.94819,-117.2340646
+							&zoom=11
+							&size=900x500
+							&maptype=roadmap
+							&markers=color:blue%7Clabel:C%7C32.94819,-117.2340646
+							&markers=color:green%7Clabel:O%7C32.927951,-117.2192153
+							&markers=color:red%7Clabel:S%7C32.9275884,-117.0819636
+							&markers=color:red%7Clabel:L%7C32.9920395,-117.1660977">
 				</section>
 			</div>
 		
@@ -224,7 +230,7 @@
 			        invites="[{ id : '+18583868923', invite_type : 'PHONE' }]">
 			    </g:hangout>
 				<ul class="icons">
-					<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+					<li class="active"><a href="http://facebook.com/anu.s.gujral" class="fa fa-facebook"><span>Facebook</span></a></li>
 					<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
 					<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
 					<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
@@ -244,8 +250,8 @@
 		  var ImageArr1 = new Array("images/Photos/IMAG1162-1-1.jpg","images/Photos/IMAG1165-1.jpg",
 		  "images/Photos/IMAG1259-1-1.jpg", "images/Photos/IMAG1261-1.jpg");
 		  var ImageHolder1 = document.getElementById('Rotating1');
-		  
-		  var ImageArr2 = new Array("Picture(5).jpg","Picture(6).jpg","Picture(7).jpg");
+		  var ImageArr2 = new Array("images/Photos/IMAG1162-1-1.jpg","images/Photos/IMAG1165-1.jpg",
+		  "images/Photos/IMAG1259-1-1.jpg", "images/Photos/IMAG1261-1.jpg");
 		  var ImageHolder2 = document.getElementById('Rotating2');
 		  
 		  function RotateImages(whichHolder,Start)
@@ -262,20 +268,5 @@
 		  RotateImages(2,0);
 		  
 		  </script>
-
-	<div id="map"></div>
-
-   <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
-		  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa1Pwk5V7vm6YeY2GU1t0xG8YrKdkUsYA&callback=initMap"
-		async defer></script>
-
 	</body>
 </html>

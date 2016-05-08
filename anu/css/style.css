@@ -8,7 +8,6 @@
 */
 
 /* Basic */
-
 	body {
 		background: #222222;
 	}
@@ -788,6 +787,9 @@
 		font-size: 1.6em;
 		font-weight: 400;
 	}
+
+  #map { height: 100%; }
+
 
 /* Team */
 
