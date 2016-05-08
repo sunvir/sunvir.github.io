@@ -531,6 +531,21 @@
 		.wrapper.style4 {
 			background: white;
 		}
+		.wrapper.style4a {
+			background: #82b440;
+			color: white;
+		}
+			wrapper.style4a .image img {
+					display: block;
+					width: 60%;
+					margin: 0em auto 2em auto;
+				}
+
+				.wrapper.style4a .image img {
+					border-radius: 50%;
+					border: 10px solid;
+					border-color: white;
+				}
 
 		.wrapper.style5 {
 			background: #82b440;
