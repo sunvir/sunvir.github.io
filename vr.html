@@ -10,27 +10,26 @@
 
 <body>
 
-<a-scene>
-  <a-box color="#6173F4" width="4" height="10" depth="2"></a-box>
-
-  <a-collada-model src="monster.dae" position="-1 0.5 1" rotation="0 45 0 "></a-collada-model>
-
-  <a-image src="fox.png"></a-image>
-
-  <a-sky color="#ECECEC"></a-sky>
-   
-</a-scene>
 
 <a-scene>
+
+  <a-assets>
+    <img id="p2" src="/anu/images/Photos/IMAG1162-1-1.jpg">
+    <img id="p1" src="http://sunvir.github.io/anu/images/placeholder.png">
+
+  </a-assets>
+
   <a-box color="#6173F4" position="0 1.25 -5" width="4" height="1" depth="1"></a-box>
+  <a-image src="#p1"  width="10" height="5" position="-2 1.2 -4"
+               ></a-image>
+
+<a-image src="#p2"></a-image>
 
   <a-sphere position="0 1.25 -2" radius="1.25" color="#EF2D5E"></a-sphere>
-  <a-cube position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depth="1" color="#4CC3D9"></a-cube>
+ <!-- <a-cube position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depth="1" color="#4CC3D9"></a-cube>
   <a-cylinder position="1 0.75 1" radius="0.5" heighs="1.5" color="#FFC65D"></a-cylinder>
-  <a-plane rotation="-45 0 0" width="4" height="4" color="#9BC8A4"></a-plane>
-  <a-sky color="#ECECEC"></a-sky>
-  <!-- Basic plane. -->
-  <a-plane color="#FCC" height="20" width="20" position="0, 3 -8"></a-plane>
+  <a-plane rotation="-45 0 0" width="4" height="4" color="#9BC8A4"></a-plane> -->
+  <!-- <a-sky src="#p1"></a-sky> -->
 </a-scene>
 
  
