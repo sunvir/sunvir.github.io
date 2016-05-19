@@ -1,32 +1,71 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html>
-<head>
-    <title>Hangout button demo: Inviting a phone number</title>
-    <link rel="canonical" href="http://www.example.com" />
-	 <style type="text/css">
-  			html, body { height: 100%; margin: 0; padding: 0;  }
-			#map { height: 50%; }
-  		</style>  
-	 <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
-		  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa1Pwk5V7vm6YeY2GU1t0xG8YrKdkUsYA&callback=initMap"
-		async defer></script>
-    
-</head>
-<body>
-   
-HOre stuff here!
 
-	<div id="map"></div>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Stuff</title>
+		<style>
+			html, body {
+				background: #fff;
+				color: #000;
+				font-family: sans-serif;
+			}
+			.example {
+				display: inline-block;
+				width: 260px;
+				min-height: 120px;
+				padding: 20px;
+				border: 1px solid #ccc;
+				vertical-align: top;
+				margin: 10px;
+			}
+		</style>
+	</head>
 
-  
-</body>
+	<body>
+
+
+		<h2>Canvas debug examples</h2>
+
+		<div class="example">
+			<a href="/jsartoolkit/examples/ad-serving.html">
+			Demo video with explanation and real-time augmentation
+			</a>
+
+		</div>
+
+		<div class="example">
+			<a href="/jsartoolkit/examples/threejs_from_scratch_ssg.html">
+				Box augmented on markers
+			</a>
+
+		</div>
+
+		<div class="example">
+			<a href="/jsartoolkit/examples/simple_video.html">
+				Flat augmentation 
+			</a>
+		</div>
+
+		<div class="example">
+			<a href="/jsartoolkit/examples/barcode_threejs.html">
+				live camera augmentation</a>
+				<p>
+				Show <a href="https://github.com/artoolkit/artoolkit5/blob/master/doc/patterns/Matrix%20code%203x3%20(72dpi)/20.png">3x3 marker id 20</a> to camera to display a colorful sphere on top of it. Tap the sphere to rotate it.
+			</a>
+		</div>
+		
+		<div class="example">
+			<a href="/anu">
+				Artists Studio</a>
+				<p>
+				
+			</a>
+		</div>
+
+
+	</body>
+
 </html>
+
